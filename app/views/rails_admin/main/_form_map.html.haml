@@ -43,5 +43,8 @@
 
     });
 %div.ramf-map-container{:id => field.dom_name, :style => "width:300px;height:200px"}
-= form.send :hidden_field, field.name, :id => field.latitude_dom_name
-= form.send :hidden_field, field.longitude_field, :id => field.longitude_dom_name
+%br
+Lat
+= form.send :text_field, field.name, :id => field.latitude_dom_name
+Lon
+= form.send :text_field, field.longitude_field, :id => field.longitude_dom_name
